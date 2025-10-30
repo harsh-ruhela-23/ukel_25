@@ -1022,8 +1022,10 @@ class BottomView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
+    return SafeArea(
+      top: false,
+      child: Row(
+        children: [
         // Expanded(
         //   child: GestureDetector(
         //     onTap: onSaveNextClick,
@@ -1096,7 +1098,8 @@ class BottomView extends StatelessWidget {
         //     ),
         //   ),
         // ),
-      ],
+        ],
+      ),
     );
   }
 }
