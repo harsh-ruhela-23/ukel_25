@@ -1,0 +1,30 @@
+class StringManager {
+  static const String noRouteFound = 'No route Found';
+  static const String requestTimeOut = 'Request Time out. Please try later';
+  static const String internalServerError = 'Internal Server error. Please try later';
+  static const String internetConnectionError = 'Please check your internet connection.';
+  static const String appName = 'Ukel App';
+  static const String lblSkipApp = 'skip all';
+  static const String lblNext = 'Next';
+  static const String lblGetStarted = 'Get Started';
+  static const String onboardTitle1 = 'Access new clients\nand receive more orders';
+  static const String onboardTitle2 = 'Apply to medium - large scale\nprojects';
+  static const String onboardTitle3 = 'Receive promotions from\ndifferent suppliers';
+  static const String onboardTitle4 = 'Receive promotions from\ndifferent suppliers';
+  static const String lblLogin = 'Login';
+  static const String lblMobileNumber = 'Mobile Number';
+  static const String lblPassword = 'Password';
+  static const String lblDontYouHaveAnAccount = 'Don\'t you have an account yet?';
+  static const String lblCreateAccount = 'Create Account';
+  static const String lblServiceType = 'Service Type';
+  static const String lblNameSurname = 'Name Surname';
+  static const String lblConfirmPassword = 'Confirm Password';
+  static const String termsOfAgreement1 = 'I agree to the terms of';
+  static const String termsOfAgreement2 = 'Licence Agreement';
+  static const String lblYouAlreadyHaveAnAccount = 'You already have an account?';
+  static const String lblVerification = 'Verification';
+  static const String lblResend = 'Resend';
+  static const String lblVerificationText1 = 'An activation link has been sent to your email. Click on the link to verify your account';
+  static const String lblVerificationText2 = 'If you didn\'t receive our email click on "Resend" button below after 30 seconds.';
+  static const String ppText = 'Nostrum cum cum cum omnis aspernatur quam voluptas. Repellat quia deserunt voluptatum praesentium natus fuga itaque alias dolores. Cupiditate non culpa voluptatem qui minima a sed officia. Consequatur reprehenderit dolores. Consequuntur et ex necessitatibus eaque repellendus dicta qui. Molestias ut quo sint ut.';
+}

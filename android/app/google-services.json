@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230827430229",
+    "project_id": "ukel-app",
+    "storage_bucket": "ukel-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230827430229:android:4ad44e2c86e1d6adf09fdc",
+        "android_client_info": {
+          "package_name": "com.ukel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230827430229-cl5k2t61nloaf3rcro6heeidqp0t3s9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-xZ8NcW1oreu290aq5F6CCDf2d7Wl44E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230827430229-cl5k2t61nloaf3rcro6heeidqp0t3s9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
