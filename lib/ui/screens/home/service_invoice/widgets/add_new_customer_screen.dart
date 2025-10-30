@@ -468,69 +468,75 @@ class BottomView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: GestureDetector(
-            onTap: isProcessing ? null : onCancelClick,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 15.sp, vertical: 15.sp),
-              decoration: BoxDecoration(color: ColorManager.btnColorWhite),
-              child: Text(
-                "Cancel",
-                textAlign: TextAlign.center,
-                style: getBoldStyle(
-                  color: ColorManager.textColorBlack,
-                  fontSize: FontSize.mediumExtra,
+    return SafeArea(
+      top: false,
+      child: Row(
+        children: [
+          Expanded(
+            child: GestureDetector(
+              onTap: isProcessing ? null : onCancelClick,
+              child: Container(
+                padding:
+                    EdgeInsets.symmetric(horizontal: 15.sp, vertical: 15.sp),
+                decoration: BoxDecoration(color: ColorManager.btnColorWhite),
+                child: Text(
+                  "Cancel",
+                  textAlign: TextAlign.center,
+                  style: getBoldStyle(
+                    color: ColorManager.textColorBlack,
+                    fontSize: FontSize.mediumExtra,
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-        Expanded(
-          child: GestureDetector(
-            onTap: isProcessing ? null : onSaveClick,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 15.sp, vertical: 15.sp),
-              decoration: BoxDecoration(color: ColorManager.btnColorDarkBlue),
-              child: isProcessing
-                  ? Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        SizedBox(
-                          width: 16.sp,
-                          height: 16.sp,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            valueColor: AlwaysStoppedAnimation<Color>(
-                              ColorManager.textColorWhite,
+          Expanded(
+            child: GestureDetector(
+              onTap: isProcessing ? null : onSaveClick,
+              child: Container(
+                padding:
+                    EdgeInsets.symmetric(horizontal: 15.sp, vertical: 15.sp),
+                decoration:
+                    BoxDecoration(color: ColorManager.btnColorDarkBlue),
+                child: isProcessing
+                    ? Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          SizedBox(
+                            width: 16.sp,
+                            height: 16.sp,
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2,
+                              valueColor: AlwaysStoppedAnimation<Color>(
+                                ColorManager.textColorWhite,
+                              ),
                             ),
                           ),
-                        ),
-                        SizedBox(width: 8.sp),
-                        Text(
-                          processingLabel,
-                          textAlign: TextAlign.center,
-                          style: getBoldStyle(
-                            color: ColorManager.textColorWhite,
-                            fontSize: FontSize.mediumExtra,
+                          SizedBox(width: 8.sp),
+                          Text(
+                            processingLabel,
+                            textAlign: TextAlign.center,
+                            style: getBoldStyle(
+                              color: ColorManager.textColorWhite,
+                              fontSize: FontSize.mediumExtra,
+                            ),
                           ),
+                        ],
+                      )
+                    : Text(
+                        saveLabel,
+                        textAlign: TextAlign.center,
+                        style: getBoldStyle(
+                          color: ColorManager.textColorWhite,
+                          fontSize: FontSize.mediumExtra,
                         ),
-                      ],
-                    )
-                  : Text(
-                      saveLabel,
-                      textAlign: TextAlign.center,
-                      style: getBoldStyle(
-                        color: ColorManager.textColorWhite,
-                        fontSize: FontSize.mediumExtra,
                       ),
-                    ),
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
